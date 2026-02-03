@@ -1,0 +1,148 @@
+body{
+font-family: "plus Jakarta Sans", sans-serif !important;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+
+/* navbar */
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass{
+    color:#fe424d ;
+    font-size: 2rem;
+}
+
+.nan-link{
+    color: #222222;
+}
+ /* footer */
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    justify-content: center;
+    align-items: center;
+    /* Adds space between the rows */
+}
+
+.f-info-socials {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+    gap: 0.5rem;
+
+}
+
+.f-info-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+}
+
+.f-info-links a {
+    text-decoration: underline;
+    color: #222222;
+}
+
+
+/* cards */
+.listing-card{
+   border: none !important;
+   margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text{
+    font-weight: 400 rem !important;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+/* card effect */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+ 
+/* Card Styling */
+.show-card {
+    border: none !important;
+    padding: 0;
+}
+
+.show-img {
+    height: 35vh; 
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem !important; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.listing-card:hover {
+    transform: none; 
+}
+
+.card-body {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.card-text b {
+    font-size: 1rem;
+    color: #222222;
+}
+
+.card-text {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: black;
+}
+
+
+.show-btns {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem; 
+    margin-top: 1rem;
+}
+
+.edit-btn {
+    background-color: black !important; 
+    border: none !important;
+    padding: 0.4rem !important;
+}
+
+.edit-btn:hover {
+    background-color: #e33b45 !important;
+}
+
+.delete-btn {
+    padding: 0.5rem 1rem !important;
+}
+

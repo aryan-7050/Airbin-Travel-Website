@@ -1,0 +1,50 @@
+/* 1. All Reviews Star Display (Static) */
+.static-star-rating {
+  display: flex;
+  flex-direction: row; /* Normal left-to-right order */
+  font-size: 24px;
+  padding: 5px 0;
+}
+
+.static-star-rating .star {
+  color: #ccc; /* Default Grey for empty stars */
+  margin-right: 2px;
+}
+
+.static-star-rating .star.filled {
+  color: #ffc107; /* Golden Yellow for filled stars */
+}
+
+/* 2. Interactive Form Stars (Your existing logic) */
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 35px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star-rating label:before {
+  content: '\2605';
+}
+
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #ffc107;
+}
+
+/* 3. Delete Button Polish */
+.btn-danger {
+  background-color: #d9534f;
+  border: none;
+  border-radius: 4px;
+}
