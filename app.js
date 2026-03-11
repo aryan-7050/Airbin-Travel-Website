@@ -45,12 +45,8 @@ app.engine('ejs', ejsMate);
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
-// Middlewares
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method")); 
-
-// --- STATIC FILES CONFIGURATION ---
-// This allows the browser to access files in /public and /public/uploads
 app.use(express.static(path.join(__dirname, "public")));
 // ----------------------------------
 
