@@ -28,7 +28,7 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 // Database Connection
-const dbUrl = process.env.MONGO_URL || "mongodb://127.0.0.1:27017/wanderlust";
+// const dbUrl = process.env.MONGO_URL || "mongodb://127.0.0.1:27017/wanderlust";
 //const dbUrl = process.env.ATLASDB_URL; 
 
 async function main() {
@@ -51,7 +51,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // ----------------------------------
 
 const sessionOptions = {
-    secret: process.env.SECRET || "mysupersecretcode",
+    secret: process.env.SECRET || process.env.SECRET,
     resave: false,
     saveUninitialized: true,
     cookie: {
